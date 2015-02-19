@@ -4,7 +4,7 @@
   "description": "Monitor a target element for child elements being added or removed using MutationObservers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "testling -x ./node_modules/travis-multirunner/start-$BROWSER.sh",
     "gendocs": "gendocs > README.md"
   },
   "repository": {
@@ -24,7 +24,13 @@
     "flatten-list": "0.0.2",
     "whisk": "^1.1.0"
   },
+  "testling": {
+    "files": "test/*.js"
+  },
   "devDependencies": {
-    "hyperscript": "^1.4.4"
+    "hyperscript": "^1.4.4",
+    "tape": "^3.5.0",
+    "testling": "^1.7.1",
+    "travis-multirunner": "^1.0.0"
   }
 }
