@@ -1,12 +1,26 @@
 # mucus
 
 Mucus is a package that can monitor target element for child elements
-being added or removed using MutationObservers.
+being added or removed using MutationObservers.  Just makes it all
+a bit cleaner (ironically) to use, whose idea were NodeLists anyway...
 
 
 [![NPM](https://nodei.co/npm/mucus.png)](https://nodei.co/npm/mucus/)
 
 [![Build Status](https://img.shields.io/travis/DamonOehlman/mucus.svg?branch=master)](https://travis-ci.org/DamonOehlman/mucus) 
+
+## Reference
+
+### ```mucus(target, listener) => fn```
+
+Listen to the `target` element for changes and report changes in the
+`listener` function as an aggregated changes object (see below). The
+`fn` returned from mucus to be called to stop mucus running.
+
+Format of changes object:
+
+- `added` (an array of elements added to the target)
+- `removed` (an array of elements removed fro the target)
 
 ## Example Usage
 
