@@ -6,7 +6,7 @@ being added or removed using MutationObservers.
 
 [![NPM](https://nodei.co/npm/mucus.png)](https://nodei.co/npm/mucus/)
 
-
+[![Build Status](https://img.shields.io/travis/DamonOehlman/mucus.svg?branch=master)](https://travis-ci.org/DamonOehlman/mucus) 
 
 ## Example Usage
 
